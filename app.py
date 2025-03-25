@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 TYRE_DATABASE = [
     {"vehicle_type": "sedan", "driving_style": "city", "weather": "summer", "budget": "economy", "tyre": "Michelin Energy Saver"},
